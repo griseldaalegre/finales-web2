@@ -1,4 +1,5 @@
 ##
+
 Utilizar un mismo token JWT en 2 servidores:
 
 El Servidor 1 genera un JWT con una clave secreta o privada y lo envía al cliente, quien lo usa para autenticarse en ambos servidores. El Servidor 2 recibe el JWT, verifica su firma con la misma clave compartida y, si es válido, permite el acceso. 
@@ -9,7 +10,8 @@ en caso de filtrarce las contraseñas utilizan hash para encriptarce y hace impo
 Identificar la sesión de un usuario en un sistema SSR:
 
 se utiliza $_SESSIONS['id_usuario'] para identificar usuarios logueado
- 
+
+
 ###
 PDO sirve para prevenir los ataques de Cross Site Scripting (XSS) falso . PDO Es para la coneccion con la base de datos
 
