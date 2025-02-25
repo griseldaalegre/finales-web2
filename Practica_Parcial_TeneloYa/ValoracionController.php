@@ -22,7 +22,14 @@ class ValoracionController
         $resena = $_POST['reseña'];
 
         $user = $this->model->usuario($idUser);
+<<<<<<< HEAD
         
+=======
+        /*$empresa=$this->model->empresa($idEmpresa); */
+        /*if(!empty($user) && !empty($empresa) && !empty($valoracion) && !empty($resena) ){
+
+        }*/
+>>>>>>> 2f329eb1df07f02ae78847242175b09022e3c366
         if ($user) {
             $empresa = $this->model->empresa($idEmpresa);
             if ($empresa) {
@@ -56,7 +63,11 @@ class ValoracionController
     function marcarPremiun($params = [])
     {
         $valor = $_POST['valor'];
+<<<<<<< HEAD
         $this->auth->session_start();
+=======
+        $this->auth->session_start(); 
+>>>>>>> 2f329eb1df07f02ae78847242175b09022e3c366
         if ($this->auth->isAdmin()) {
             $empresas = $this->model->getEmpresasPromedio();
             if ($valor && $valor >= 1) {
@@ -84,12 +95,20 @@ class ValoracionController
         $resenas = $this->model->getResena();
         $resenasUsuarios = [];
         if ($resenas) {
+<<<<<<< HEAD
             foreach ($resenas as $re) {//por cada usuario
+=======
+            foreach ($resenas as $re) {
+>>>>>>> 2f329eb1df07f02ae78847242175b09022e3c366
                 if ($re->total_resenas >= 1) {
                     $resenasNegativas = $this->model->negativas($re->id);
                     if ($resenasNegativas) {
                         $resenasNegUsuarios = [];
+<<<<<<< HEAD
                         foreach ($resenasNegativas as $neg) {//cada reseña de usuario
+=======
+                        foreach ($resenasNegativas as $neg) {
+>>>>>>> 2f329eb1df07f02ae78847242175b09022e3c366
                             $resenasNegUsuarios[] = [
                                 "nombre" => $neg->nombre,
                                 "total" => $neg->valoracion . "/5",
@@ -108,7 +127,11 @@ class ValoracionController
                 }
             }
         }
+<<<<<<< HEAD
         $this->view->show($resenasUsuarios);
+=======
+        return $resenasUsuarios;
+>>>>>>> 2f329eb1df07f02ae78847242175b09022e3c366
     }
 }
 /*

@@ -2,7 +2,11 @@
  require_once 'config.php';
  require_once './libs/router.php';
 
+<<<<<<< HEAD
     $Route = new Router();
+=======
+    $Route = new Route();
+>>>>>>> 2f329eb1df07f02ae78847242175b09022e3c366
 
     $Route->add('/getResenas','GET','ResenasController','getPromocion');
     $Route->add('/getStock/{id}','GET','ResenasController','getStockRespuesto' );

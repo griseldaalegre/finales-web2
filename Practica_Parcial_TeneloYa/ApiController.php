@@ -46,8 +46,11 @@ class ApiController
         }
     }
 }
+<<<<<<< HEAD
 /*  $router->add('api/resena/:ID','GET','ApiController',getResena);
     $router->add('api/edit/:ID','PUT','ApiController',edit);
     $router->add('api/agregar','POST','ApiController',addResena);
     $router->add('api/resena/:ID','DELETE','ApiController',getResena);
  */
+=======
+>>>>>>> 2f329eb1df07f02ae78847242175b09022e3c366

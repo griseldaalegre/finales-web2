@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 
+=======
+// Logica
+>>>>>>> 2f329eb1df07f02ae78847242175b09022e3c366
 
 class ResenasModel{
 

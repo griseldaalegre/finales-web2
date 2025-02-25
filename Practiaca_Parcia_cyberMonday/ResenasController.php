@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 
+=======
+//INTERMEDIARIO ENTRE EL MODELO Y LA VISTA
+>>>>>>> 2f329eb1df07f02ae78847242175b09022e3c366
 require_once 'ResenasModel';
 require_once 'ResenasView';
 
